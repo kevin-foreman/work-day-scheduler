@@ -11,26 +11,10 @@ var pageAuditTimer = function(everyFive) {
 };
 window.onload = pageAuditTimer(300000);
 
-// make tasks array
-// var tasks = {
-//     nineAm: [],
-//     tenAm: [],
-//     elevenAm: [],
-//     twelvePm: [],
-//     onePm: [],
-//     twoPm: [],
-//     threePm: [],
-//     fourPm: [],
-//     fivePm: []
-// };
-// console.log(tasks);
-
 
 // Make the information put into form fields persist
 
-// var saveTasks = function() {
-// document.getElementById("#saveBtn").addEventListener("click", function() {
-//     var nineAm = document.getElementById("#nineAm").textArea;
+
 var nineAm = document.getElementById("nineAm");
 var tenAm = document.getElementById("tenAm");
 var elevenAm = document.getElementById("elevenAm");
@@ -44,39 +28,34 @@ var fivePm = document.getElementById("fivePm");
 saveBtn9.onclick = function() {
   var nineHour = nineAm.value;
   localStorage.setItem("nineHourText", nineHour);
-  console.log(nineHour);
 }
-
 
 saveBtn10.onclick = function() {
   var tenHour = tenAm.value;
-  console.log(tenHour);
+  localStorage.setItem("tenHourText", tenHour);
 }
 
+saveBtn11.onclick = function() {
+  var elevenHour = elevenAm.value;
+  localStorage.setItem("elevenHourText", elevenHour);
+}
 
-    // localStorage.setItem("text", "Hello World");
+saveBtn12.onclick = function() {
+  var twelveHour = twelvePm.value;
+  localStorage.setItem("twelveHourText", twelveHour);
+}
 
-// })
-// };
-// console.log(localStorage.getItem("text"));
+saveBtn12.onclick = function() {
+  var twelveHour = twelvePm.value;
+  localStorage.setItem("twelveHourText", twelveHour);
+}
 
-// Get the information from local storage, and put it back on the page after refresh
-// var loadTasks = function() {
-//     tasks = JSON.parse(localStorage.getItem("tasks"));
+saveBtn13.onclick = function() {
+  var thirteenHour = onePm.value;
+  localStorage.setItem("thirteenHourText", thirteenHour);
+}
 
-//     // if nothing in local storage, create a new object to track all task status arrays
-
-//     if (!tasks) {
-//         tasks = {
-//           nineAm: [],
-//           tenAm: [],
-//           elevenAm: [],
-//           twelvePm: [],
-//           onePm: [],
-//           twoPm: [],
-//           threePm: [],
-//           fourPm: [],
-//           fivePm: []
-//         };
-//       }
-//     };
+saveBtn14.onclick = function() {
+  var fourteenHour = twoPm.value;
+  localStorage.setItem("fourteenHourText", fourteenHour);
+}

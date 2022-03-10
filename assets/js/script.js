@@ -59,3 +59,18 @@ saveBtn14.onclick = function() {
   var fourteenHour = twoPm.value;
   localStorage.setItem("fourteenHourText", fourteenHour);
 }
+
+saveBtn15.onclick = function() {
+  var fifteenHour = threePm.value;
+  localStorage.setItem("fifteenHourText", fifteenHour);
+}
+
+saveBtn16.onclick = function() {
+  var sixteenHour = fourPm.value;
+  localStorage.setItem("sixteenHourText", sixteenHour);
+}
+
+saveBtn17.onclick = function() {
+  var seventeenHour = fivePm.value;
+  localStorage.setItem("seventeenHourText", seventeenHour);
+}

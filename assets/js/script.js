@@ -18,7 +18,6 @@ $(document).ready(function() {
     var time=$(this).parent().attr("id")
     localStorage.setItem(time, description)
     console.log(description, time)
-    upDater()
   })
 
   // get information from local storage and post to page after reload
@@ -46,7 +45,7 @@ function upDater() {
     }
 
     }) 
-  }
+  }upDater()
 })
 
 

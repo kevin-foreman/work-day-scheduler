@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 // update the task fields with colors to correspond with the classes
 function upDater() {
-  var currentHour = moment().hours
+  var currentHour = moment().hours();
   $(".time-block").each(function() {
     var timeBlock = parseInt ($(this).attr("id"))
     if (timeBlock < currentHour) {

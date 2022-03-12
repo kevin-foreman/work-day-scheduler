@@ -1,2 +1,2 @@
 # work-day-scheduler
-By the hour schedule for a work day
+## By the hour schedule for a work day
